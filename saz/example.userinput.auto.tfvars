@@ -280,6 +280,7 @@
 # **/
 # enable_cos = true
 #
+# /**
 # *   Determines whether to create vpn or not. Enter true or false.
 # *   Here we have  enable_vpn = false
 # **/

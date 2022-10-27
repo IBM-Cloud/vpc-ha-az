@@ -153,7 +153,7 @@ module "public_gateway" {
   vpc_id                = module.core_modules.vpc.id
   prefix                = "${var.prefix}region-"
   resource_group_id     = var.resource_group_id
-  zone                  = var.zone
+  zones                 = [var.zone]
   api_key               = var.api_key
   tags                  = var.tags
 }
