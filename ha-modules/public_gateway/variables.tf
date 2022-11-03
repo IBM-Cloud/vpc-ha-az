@@ -50,9 +50,9 @@ variable "vpc_id" {
 * Desc: The zone where the public gateway will be created
 * Type: string
 **/
-variable "zone" {
+variable "zones" {
   description = "The zone where the public gateway will be created"
-  type        = string
+  type        = list(string)
 }
 
 /**
