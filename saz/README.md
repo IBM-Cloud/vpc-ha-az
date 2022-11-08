@@ -8,7 +8,7 @@ If there is a requirement for extra ips please update the db_ip_count with extra
 | Name                                                                     | Version  |
 | ------------------------------------------------------------------------ | -------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 1.1.2 |
-| <a name="requirement_ibm"></a> [ibm](#requirement_ibm)                   | 1.39.1   |
+| <a name="requirement_ibm"></a> [ibm](#requirement_ibm)                   | 1.45.0   |
 
 ## Providers
 

@@ -25,7 +25,7 @@ variable "vpn_mode" {
 * Type: list(any)
 **/
 variable "peer_cidrs" {
-  description = "List of peer CIDRs for the creation of VPN connection."
+  description = "Enter the list of remote peer CIDRs you want to connect through the VPN tunnel in the format as [\"x.x.x.x/x\",\"x.x.x.x/x\",...]\nFor example:\n1. Single peer_cidrs  = [\"10.0.0.0/28\"]\n2. List of peer_cidrs = [\"10.0.0.0/28\",\"10.0.0.1/32\"]"
   type        = list(string)
   validation {
     condition     = can([for ip in var.peer_cidrs : regex("^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)/([9]|1[0-9]|2[0-9]|3[0-2])$", ip)])
