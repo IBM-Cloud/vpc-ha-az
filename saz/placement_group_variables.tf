@@ -11,7 +11,7 @@
 * Desc: The strategy for Database servers placement group - host_spread: place on different compute hosts - power_spread: place on compute hosts that use different power sources.
 **/
 variable "db_pg_strategy" {
-  description = "The strategy for Database servers placement group - host_spread: place on different compute hosts - power_spread: place on compute hosts that use different power sources."
+  description = "The strategy for Database servers placement group \n- host_spread: place on different compute hosts \n- power_spread: place on compute hosts that use different power sources."
   type        = string
   validation {
     condition     = contains(["host_spread", "power_spread"], var.db_pg_strategy)
@@ -25,7 +25,7 @@ variable "db_pg_strategy" {
 * Desc: The strategy for Web servers placement group - host_spread: place on different compute hosts - power_spread: place on compute hosts that use different power sources.
 **/
 variable "web_pg_strategy" {
-  description = "The strategy for Web servers placement group - host_spread: place on different compute hosts - power_spread: place on compute hosts that use different power sources."
+  description = "The strategy for Web servers placement group \n- host_spread: place on different compute hosts \n- power_spread: place on compute hosts that use different power sources."
   type        = string
   validation {
     condition     = contains(["host_spread", "power_spread"], var.web_pg_strategy)
@@ -39,7 +39,7 @@ variable "web_pg_strategy" {
 * Desc: The strategy for App servers placement group - host_spread: place on different compute hosts - power_spread: place on compute hosts that use different power sources.
 **/
 variable "app_pg_strategy" {
-  description = "The strategy for App servers placement group - host_spread: place on different compute hosts - power_spread: place on compute hosts that use different power sources."
+  description = "The strategy for App servers placement group \n- host_spread: place on different compute hosts \n- power_spread: place on compute hosts that use different power sources."
   type        = string
   validation {
     condition     = contains(["host_spread", "power_spread"], var.app_pg_strategy)

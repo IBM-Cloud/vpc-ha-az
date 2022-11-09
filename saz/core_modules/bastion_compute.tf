@@ -82,7 +82,7 @@ resource "ibm_is_instance" "bastion" {
     security_groups = [ibm_is_security_group.bastion.id]
   }
   lifecycle {
-    prevent_destroy = false // toggle this to true before publish
+    prevent_destroy = true
     ignore_changes = [
       user_data,
     ]
